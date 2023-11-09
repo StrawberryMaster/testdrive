@@ -5,7 +5,7 @@ body {
 }
 
 h1 {
-    color: #0070c9;
+    color: #b72822;
     font-size: 2rem;
     margin: 20px;
 }
@@ -46,7 +46,7 @@ li:first-of-type {
     padding: .25rem;
     bottom: 0;
     left: 0;
-    position: relative;
+    position: absolute;
     right: 0;
 }
 #footer p {
@@ -57,6 +57,10 @@ li:first-of-type {
     color: #fff;
     padding: .2rem .4rem;
     text-decoration: underline;
+}
+#footer img {
+    margin: 0 .2rem;
+    vertical-align: middle;
 }
 
 @media (prefers-color-scheme: dark) {
