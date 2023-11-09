@@ -1,0 +1,261 @@
+article,
+section,
+aside,
+header {
+	display: block;
+}
+
+#DemoContent {
+	margin: auto 5rem;
+	position: relative;
+}
+
+#outline {
+	position: absolute;
+	width: 25%;
+	height: 638px;
+	min-width: 225px;
+	padding-top: 5px;
+	border: 2px #666 solid;
+	border-radius: 10px;
+}
+
+#outline ol {
+	list-style-type: upper-roman;
+	margin: .2rem;
+}
+
+#outline li {
+	margin: .1rem;
+	border: .2rem solid transparent;
+	border-radius: .2rem;
+}
+
+#outline li:first-of-type, #DemoDetails li:first-of-type {
+	font-weight: inherit;
+	left: inherit;
+	list-style: inherit;
+	position: inherit;
+}
+
+.outline {
+	border-left: 3px white solid;
+	border-radius: 10px;
+}
+
+.notepad {
+	border-left: 3px #ffc solid;
+	border-radius: 10px;
+}
+
+#editor {
+	position: absolute;
+	right: 0px;
+	width: 73%;
+}
+
+#editcontrols {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 30px;
+	width: 100%;
+	padding-top: 0px;
+	padding-bottom: 10px;
+	border: 2px #666 solid;
+	border-radius: 5px 5px 0px 0px;
+	background-color: #ccc;
+	text-align: right;
+}
+
+#editcontrols ul {
+	position: absolute;
+	top: 12px;
+	right: 15px;
+	width: 100px;
+	list-style-type: none;
+}
+
+#editcontrols ul li a {
+	text-decoration: none;
+	text-align: center;
+}
+
+#editcontrols ul li {
+	text-align: center;
+	background-color: #eee;
+	border: 4px #666 solid;
+	border-bottom: none;
+	border-radius: 5px 5px 0 0;
+	padding: 3px;
+	margin: 0px;
+}
+
+#editcontrols ul li:hover {
+	border-color: #fff;
+}
+
+#editcontrols aside {
+	color: initial;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+
+#markup {
+	display: none;
+	position: absolute;
+	right: 0px;
+	top: 40px;
+	width: 100%;
+	height: 600px;
+	border: 2px #666 solid;
+	border-radius: 0px 0px 0px 10px;
+	color: #06c;
+}
+
+#notepad {
+	position: absolute;
+	right: 0px;
+	top: 40px;
+	height: 600px;
+	width: 100%;
+	padding-top: 0px;
+
+	overflow: auto;
+	border: 2px #666 solid;
+	border-radius: 0px 0px 0px 10px;
+	background-color: #ffc;
+}
+
+.ARTICLE {
+	border-left: 3px #c60 solid;
+	border-radius: 10px;
+}
+
+.SECTION {
+	border-left: 3px #069 solid;
+	border-radius: 10px;
+}
+
+.ASIDE {
+	border-left: 3px #c00 solid;
+	border-radius: 10px;
+}
+
+.NAV {
+	border-left: 3px #c63 solid;
+	border-radius: 10px;
+}
+
+.HEADER {
+	border-left: 3px #333 solid;
+	border-radius: 10px;
+}
+
+.FOOTER {
+	border-left: 3px #333 solid;
+	border-radius: 10px;
+}
+
+.HGROUP {
+	border-left: 3px #390 solid;
+	border-radius: 10px;
+}
+
+.FIGURE {
+	border-left: 3px #660 solid;
+	border-radius: 10px;
+}
+
+.FIGCAPTION {
+	border-left: 3px #9ff solid;
+	border-radius: 10px;
+}
+
+#notepad article {
+	margin-left: 15px;
+	margin-right: 15px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#notepad hgroup {
+	margin-left: 2px;
+	padding-left: 2px;
+}
+
+#notepad article p {
+	color: initial;
+	font-size: initial;
+}
+
+#notepad article h1 {
+	color: #666;
+	font-size: 1.5rem;
+	margin: .5rem;
+}
+
+#notepad article h2 {
+	color: #09c;
+	margin: .5rem;
+}
+
+#notepad article h3 {
+	font-style: italic;
+}
+
+#notepad section {
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+}
+
+#notepad section p {
+	margin-left: 30px;
+	vertical-align: text-top;
+}
+
+#notepad aside {
+	margin-left: 50px;
+	width: 200px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: #ccf;
+	border-radius: 5px;
+}
+
+#notepad figure {
+	float: right;
+	display: block;
+	background-color: white;
+	padding: 3px;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+#notepad figcaption {
+	display: block;
+	clear: both;
+	padding-left: 3px;
+}
+
+#DemoContent {
+	margin: auto 5rem;
+}
+
+#DemoContent footer {
+	position: absolute;
+	top: 700px;
+	padding-top: 30px;
+}
+
+#DemoDetails {
+	margin-top: 675px;
+}
+
+#DemoDetails li {
+	margin-left: 25px;
+}

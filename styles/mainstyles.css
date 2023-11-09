@@ -46,7 +46,7 @@ li:first-of-type {
     padding: .25rem;
     bottom: 0;
     left: 0;
-    position: absolute;
+    position: relative;
     right: 0;
 }
 #footer p {

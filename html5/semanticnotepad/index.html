@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- All proper attribution to the authors @ Microsoft -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaleido</title>
+    <link rel="stylesheet" type="text/css" href="../../styles/mainstyles.css" />
+    <link rel="stylesheet" type="text/css" href="semanticnotepad.css" />
+    <link rel="shortcut icon" href="../styles/favicon.ico" />
+    <meta name="description" content="Site map for the Test Drive, codename 'Kaleido'.">
+    <script src="featuredetect.js"></script>
+    <script src="semanticnotepad.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Semantic Notepad</h1>
+    </header>
+    <main>
+        <p>
+            In the notepad below, the content has been marked up semantically. On the left, you'll see an outline
+            of the document's structure, courtesy of the HTML5 outline algorithm. On the right, the notepad.
+        </p>
+        <div id="DemoContent">
+            <nav id="outline"></nav>
+            <div id="editor">
+                <section id="editcontrols">
+                    <aside id="status">&nbsp;</aside>
+                    <nav>
+                        <ul>
+                            <li><a href="#" id="toggleMarkup" tabindex="1">Edit Markup</a></li>
+                        </ul>
+                    </nav>
+                </section>
+                <textarea id="markup" wrap="off" tabIndex="2"></textarea>
+
+                <div id="notepad" contentEditable="true" tabIndex="2">
+                    <article>
+                        <hgroup>
+                            <h1>Semantic Elements</h1>
+                            <h2>Cleaner, more logical markup. Accessibility improvements.</h2>
+                        </hgroup>
+                        <p>HTML5 introduces new semantic elements that make document markup more logical and web pages
+                            more accessible.</p>
+                        <p>This document utilizes semantic tags to markup its content. The outline on the left is
+                            generated using the HTML5 spec's Outline Algorithm implemented in JavaScript. You can edit
+                            the document's content and see how it affects the outline. Here's a quick overview of the
+                            new semantic elements:</p>
+                        <section>
+                            <h1>The Article Element</h1>
+                            <p>The &lt;article&gt; element is used to markup a self-contained composition in a document,
+                                page, application, or site. This could be a forum post, a magazine or newspaper
+                                article, a blog entry, a user-submitted comment, an interactive widget or gadget, or
+                                any other independent item of content. The content here is enclosed in an
+                                &lt;article&gt; element.
+                            <article>
+                                <h3>Nested Articles</h3>
+                                <p>Article tags can be nested to represent content blocks which are related to the
+                                    parent. For example, individual comments on a blog post. Also, new default styles
+                                    are applied to H1 headings which are nested inside sectioning elements (articles,
+                                    asides, navs, or sections) that provide a subordinate heading effect.</p>
+                            </article>
+                        </section>
+                        <section>
+                            <h1>The Section Element</h1>
+                            <p>The &lt;section&gt; element is used to designate generic sections of a document. Each
+                                semantic element's description in this article is enclosed in a &lt;section&gt; element.
+                            </p>
+                        </section>
+                        <section>
+                            <h1>The Nav Element</h1>
+                            <p>The &lt;nav&gt; element is used to markup a section with navigation links. Not all links
+                                on a page need to be in a nav element. Rather, only the essential site/application
+                                navigation need be enclosed in a nav element. One use of this is that accessibility
+                                tools could differentiate the main navigation for a page from other links on the page.
+                            </p>
+                        </section>
+                        <section>
+                            <h1>The Aside Element</h1>
+                            <p>The &lt;aside&gt; element is used to designate content which is "tangentially related to
+                                the content around the aside element." For example, sidebars or pull-out quotes in an
+                                article.</p>
+                            <aside>
+                                <h1>&quot;The Web as I envisaged it, we have not seen it yet. The future is still so
+                                    much bigger than the past.&quot;</h1>
+                                <p>-Tim Berners-Lee</p>
+                            </aside>
+                        </section>
+                        <section>
+                            <h1>The Hgroup Element</h1>
+                            <p>The &lt;hgroup&gt; element is used to group heading elements (H1-H6). This allows for
+                                lower importance headings (e.g., &lt;h2&gt;)to be lumped as subheadings to a higher
+                                priority heading (e.g., &lt;h1&gt;). Notice how the subheading &quot;Cleaner, more
+                                logical markup. Accessibility improvements&quot; was not included in the outline on the
+                                left. This is because the outline algorithm can identify it as subordinate to the
+                                "Semantic Elements" heading because they are grouped together with an &lt;hgroup&gt;.
+                            </p>
+                        </section>
+                        <section>
+                            <h1>The Header Element</h1>
+                            <p>The &lt;header&gt; element is used to identify the page or application's introduction or
+                                navigational aids. A typical example is enclosing the page's masthead.</p>
+                        </section>
+                        <section>
+                            <h1>The Footer Element</h1>
+                            <p>The &lt;footer&gt; element is used to identify the page or application's footer.
+                                Typically this contains author information, copyright data, colophons, appendices, or
+                                additional navigational links.</p>
+                        </section>
+                        <section>
+                            <h1>The Figure Element</h1>
+                            <figure>
+                                <img src="kaleido.png" alt="Kaleido" />
+                                <figcaption><b>Fig. 1 -</b> This is a figcaption.</figcaption>
+                            </figure>
+                            <p>The &lt;figure&gt; element is used to enclose a figure like an illustration, diagram, or
+                                photo. New default margins are applied to figures as well. The &lt;figure&gt; element
+                                can also be used to markup code samples, which is what is done here.</p>
+                        </section>
+                        <section>
+                            <h1>The Figcaption Element</h1>
+                            <p>The &lt;figcaption&gt; element is used to identify a figure's caption. This is
+                                particularly useful for accessibility agents which can use the caption to describe the
+                                figure to users.</p>
+                        </section>
+                        <section>
+                            <h1>The Mark Element</h1>
+                            <p>The &lt;mark&gt; element can be used to identify text which should be highlighted.
+                                Default styles are applied to make the text appear <mark>highlighted</mark>.</p>
+                        </section>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div id="DemoDetails">
+            <h1>Try it out!</h1>
+            <ol>
+                <li>Move the mouse (or use the Tab key) over the outline and see how it maps to content in the notepad.
+                    Click an outline entry to scroll to its content in the notepad.
+                    <ul>
+                        <li><em>The correlation between the outline and the notepad is made easier to implelment by how
+                                semantic elements describe their content.</em></li>
+                    </ul>
+                <li>Edit the notepad's headings and see how the outline is adjusted in real time.
+                    <ul>
+                        <li><em>Being able to build such an outline (based on the page's semantic markup) might allow
+                                future accessibility agents to better describe pages to their users.</em></li>
+                    </ul>
+                <li>Edit the markup by clicking "Edit Markup": create new sections, articles, hgroups, and more
+                    <ul>
+                        <li><em>After editing, click &quot;Save Markup&quot; to see the new outline and the default
+                                styles applied to your content.</em></li>
+                    </ul>
+            </ol>
+        </div>
+    </main>
+    <footer id="footer">
+        <p>For purely educational/humorous/testing purposes
+            <span>|</span>
+            <a href="https://testdrive-archive.azurewebsites.net" rel="noopener">IE Test Drive</a>
+        </p>
+    </footer>
+</body>
+
+</html>
